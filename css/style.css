@@ -278,7 +278,6 @@
 
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
-        padding: 10px 0;
         margin-left: 0;
         color: var(--bs-dark) !important;
     }
@@ -286,6 +285,14 @@
     .navbar-light .navbar-brand img {
         max-height: 90px;
     }
+}
+
+@media (max-width: 568px) {
+    .sticky-top.navbar-light {
+        padding-top: 45px !important;
+        padding-right: 10px !important;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -325,6 +332,7 @@
         display: none;
     }
 }
+
 /*** Carousel Hero Header Start ***/
 .header-carousel {
     position: relative; 
@@ -1195,6 +1203,7 @@
 
 .fixed-buttons {
     display: flex;
+    margin-right: 10px;
   }
 
   .call-button,
@@ -1248,6 +1257,6 @@
 
     .call-button,
     .whatsapp-button {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
