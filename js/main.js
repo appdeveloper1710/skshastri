@@ -14,6 +14,7 @@
     
     // Initiate the wowjs
     new WOW().init();
+    AOS.init();
 
 
     // Sticky Navbar
