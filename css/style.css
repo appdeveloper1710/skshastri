@@ -261,7 +261,7 @@
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-        position: relative;
+        position: fixed;
         background: var(--bs-white);
     }
 
@@ -540,6 +540,7 @@
     overflow: hidden;
     height: 100%;
     border-radius: 10px;
+        padding-left: 0 !important;
 }
 
 .about .about-img .about-img-inner {
@@ -749,6 +750,9 @@
 .team .team-item .team-img {
     position: relative;
     overflow: hidden;
+}
+.team {
+    padding-top: 0 !important;
 }
 .team img {
     width: 100%;
@@ -1240,5 +1244,10 @@
   @media only screen and (max-width: 768px) {
     .fixed-buttons {
         margin-top: 10px;    
+    }
+
+    .call-button,
+    .whatsapp-button {
+    font-size: 14px;
     }
 }
