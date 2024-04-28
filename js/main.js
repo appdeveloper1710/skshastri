@@ -115,8 +115,10 @@
    $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
         $('.back-to-top').fadeIn('slow');
+        $('.whatsapp-button-fixed').fadeIn('slow');
     } else {
         $('.back-to-top').fadeOut('slow');
+        $('.whatsapp-button-fixed').fadeOut('slow');
     }
     });
     $('.back-to-top').click(function () {

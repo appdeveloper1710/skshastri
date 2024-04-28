@@ -28,6 +28,26 @@
     z-index: 99;
 }
 
+.whatsapp-button-fixed {
+    position: fixed;
+    display: flex;
+    left: 30px;
+    bottom: 30px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
 /*** Button Start ***/
 .btn {
     font-weight: 600;
