@@ -48,6 +48,12 @@
     z-index: 99;
 }
 
+@media only screen and (max-width: 768px) {
+    .whatsapp-button-fixed {
+        left: 10px;
+    }
+}
+
 /*** Button Start ***/
 .btn {
     font-weight: 600;
