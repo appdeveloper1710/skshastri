@@ -70,21 +70,16 @@
       }
   
       function runCounterWhenVisible() {
-        if (isElementInViewport(counterCircle_love)) {
+        if (isElementInViewport(counterCircle_love) || isElementInViewport(counterCircle_marriage)
+    || isElementInViewport(counterCircle_family)) {
            counterCircle_love.style.opacity = 1;
+           counterCircle_marriage.style.opacity = 1;
+           counterCircle_family.style.opacity = 1;
+           counterInterval_marriage = setInterval(updateCounter_marriage, 200);
            counterInterval_love = setInterval(updateCounter_love, 10);
+           counterInterval_family = setInterval(updateCounter_family, 200);
            window.removeEventListener('scroll', runCounterWhenVisible);
         }
-        if (isElementInViewport(counterCircle_marriage)) {
-            counterCircle_marriage.style.opacity = 1;
-            counterInterval_marriage = setInterval(updateCounter_marriage, 200);
-            window.removeEventListener('scroll', runCounterWhenVisible);
-         }
-         if (isElementInViewport(counterCircle_family)) {
-            counterCircle_family.style.opacity = 1;
-             counterInterval_family = setInterval(updateCounter_family, 200);
-             window.removeEventListener('scroll', runCounterWhenVisible);
-          }
       }
   
       window.addEventListener('scroll', runCounterWhenVisible);
