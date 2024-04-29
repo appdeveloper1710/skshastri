@@ -1271,3 +1271,47 @@
         font-size: 14px;
     }
 }
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow circles to wrap to the next line */
+  }
+  
+
+.counter-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--bs-primary); /* Empty circle border */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+    margin: 0 20px; /* Add margin between circles */
+    opacity: 0; /* Initially hide the counter */
+    transition: opacity 0.5s ease-in-out; /* Add transition effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  }
+  @media only screen and (max-width: 768px) {
+    .counter-circle {
+        margin: 20px 0; /* Add margin between circles */
+    }
+  }
+
+  .counter-info {
+    position: relative;
+    bottom: 10px; /* Adjust position relative to the circle's height */
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Allow word wrapping */
+    white-space: normal; /* Allow white space */
+  }
